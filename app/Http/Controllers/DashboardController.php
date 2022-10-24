@@ -27,8 +27,7 @@ class DashboardController extends Controller
         $users = User::count();
 
         $widget = [
-            'users' => $users,
-            //...
+            'users' => $users
         ];
 
         return view('dashboard.admin', compact('widget'));

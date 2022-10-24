@@ -17,8 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('nip');
             $table->string('nama');
-            // $table->string('email')->unique();
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('phone');
             $table->enum('jenis_kelamin', ['L', 'P']);
             $table->text('alamat');
